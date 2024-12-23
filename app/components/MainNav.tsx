@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils/utils";
 import { Category } from "@/types";
 import Link from "next/link";
@@ -16,6 +18,8 @@ const MainNav = ({ data }: MainNavProps) => {
     active: pathname === `/category/${route.id}`,
   }));
 
+  console.log(data);
+
   return (
     <nav className="mx-6 flex items-center space-x-4 lg:space-x-6">
       {routes.map((route) => (
@@ -26,7 +30,9 @@ const MainNav = ({ data }: MainNavProps) => {
             "text-sm font-medium transition-colors hover:text-black",
             route.active ? "text-black" : "text-neutral-500"
           )}
-        ></Link>
+        >
+          {route.label}
+        </Link>
       ))}
     </nav>
   );
