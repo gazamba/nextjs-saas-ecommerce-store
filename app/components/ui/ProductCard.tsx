@@ -4,7 +4,8 @@ import { Product } from "@/types";
 import Image from "next/image";
 import React from "react";
 import IconButton from "./IconButton";
-import { Expand } from "lucide-react";
+import { Expand, ShoppingCart } from "lucide-react";
+import Currency from "./Currency";
 
 interface ProductCard {
   data: Product;
@@ -26,8 +27,19 @@ const ProductCard = ({ data }: ProductCard) => {
               onClick={() => {}}
               icon={<Expand size={20} className="text-gray-600" />}
             />
+            <IconButton
+              onClick={() => {}}
+              icon={<ShoppingCart size={20} className="text-gray-600" />}
+            />
           </div>
         </div>
+      </div>
+      <div>
+        <p className="font-semibold text-lg">{data.name}</p>
+        <p className="text-sm text-gray-500">{data.category?.name}</p>
+      </div>
+      <div className="flex items-center justify-between">
+        <Currency value={data?.price} />
       </div>
     </div>
   );
