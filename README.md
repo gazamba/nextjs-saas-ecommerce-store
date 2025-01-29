@@ -4,7 +4,11 @@
 
 ## 📷 Image preview
 
-<PENDING SNAPSHOT FROM APP>
+Category page:
+![Screenshot 2025-01-29 at 10 45 02](https://github.com/user-attachments/assets/8c40e884-8889-424d-903a-4125c21e610a)
+
+Cart:
+![Screenshot 2025-01-29 at 10 45 37](https://github.com/user-attachments/assets/0f42d27c-c98e-44ad-b791-6be4f18e5989)
 
 ## 🚀 Running Local
 
@@ -33,3 +37,4 @@ npm run dev
 - Shadcn UI: A UI component library for building user interfaces.
 - Prisma: An open-source database toolkit for Node.js and TypeScript that simplifies database access and management.
 - Clerk: A user management and authentication service.
+- Stripe: A payment processing platform.
