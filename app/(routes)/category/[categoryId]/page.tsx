@@ -12,24 +12,26 @@ import MobileFilters from "./components/MobileFilters";
 
 export const revalidate = 0;
 
-interface CategoryPageProps {
-  params: { categoryId: string };
-  searchParams: {
-    colorId: string;
-    sizeId: string;
-  };
-}
-const CategoryPage = async ({ params, searchParams }: CategoryPageProps) => {
-  const resolvedParams = await params;
-  const resolvedSearchParams = await searchParams;
+export type Params = Promise<{ categoryId: string }>;
+export type SearchParams = Promise<{ colorId: string; sizeId: string }>;
+
+const CategoryPage = async ({
+  params,
+  searchParams,
+}: {
+  params: Params;
+  searchParams: SearchParams;
+}) => {
+  const { categoryId } = await params;
+  const { colorId, sizeId } = await searchParams;
   const products = await getProducts({
-    categoryId: resolvedParams.categoryId,
-    colorId: resolvedSearchParams.colorId,
-    sizeId: resolvedSearchParams.sizeId,
+    categoryId: categoryId,
+    colorId: colorId,
+    sizeId: sizeId,
   });
   const sizes = await getSizes();
   const colors = await getColors();
-  const category = await getCategory(resolvedParams.categoryId);
+  const category = await getCategory(categoryId);
 
   return (
     <div className="bg-white">

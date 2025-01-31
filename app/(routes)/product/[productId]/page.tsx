@@ -6,12 +6,11 @@ import ProductList from "@/app/components/ProductList";
 import Container from "@/app/components/ui/Container";
 import React from "react";
 
-interface ProductPageProps {
-  params: { productId: string };
-}
-const ProductPage = async ({ params }: ProductPageProps) => {
-  const resolvedParams = await params;
-  const product = await getProduct(resolvedParams.productId);
+export type ProductPageProps = Promise<{ productId: string }>;
+
+const ProductPage = async ({ params }: { params: ProductPageProps }) => {
+  const { productId } = await params;
+  const product = await getProduct(productId);
   const suggestedProducts = await getProducts({
     categoryId: product?.category?.id,
   });
