@@ -1,6 +1,6 @@
 "use client";
 
-import Gallery from "@/app/components/gallery";
+import Gallery from "@/app/components/gallery/Gallery";
 import Modal from "@/app/components/ui/Modal";
 import usePreviewModal from "@/hooks/usePreviewModal";
 import Info from "@/app/components/Info";

@@ -1,6 +1,6 @@
 import getProduct from "@/actions/get-product";
 import getProducts from "@/actions/get-products";
-import Gallery from "@/app/components/gallery";
+import Gallery from "@/app/components/gallery/Gallery";
 import Info from "@/app/components/Info";
 import ProductList from "@/app/components/ProductList";
 import Container from "@/app/components/ui/Container";
