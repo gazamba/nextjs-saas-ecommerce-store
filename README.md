@@ -1,6 +1,6 @@
 # SaaS Ecommerce Store build with Next.js.
 
-<PEDING LINK FROM VERCEL DEPLOY APP>
+[Open the App](https://nextjs-saas-ecommerce-store-beige.vercel.app)
 
 ## 📷 Image preview
 
