@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../components/ui/Container";
+import Container from "@/app/components/ui/Container";
 import Billboard from "../components/Billboard";
 import getBillboard from "@/actions/get-billboard";
 import getProducts from "@/actions/get-products";

@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "./ui/Container";
+import Container from "@/app/components/ui/Container";
 import Link from "next/link";
 import MainNav from "./MainNav";
 import getCategories from "@/actions/get-categories";
