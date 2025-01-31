@@ -17,7 +17,7 @@ Follow these steps to set up and run the project in your local environment.
 ### Installation and Running Instructions
 #### 1. Clone the repository
 ```
-git clone https://github.com/your_username/nextjs-saas-ecommerce-store
+git clone https://github.com/gazamba/nextjs-saas-ecommerce-store
 cd nextjs-saas-ecommerce-store
 ```
 #### 2. Install dependencies
