@@ -14,7 +14,7 @@ describe("Gallery", () => {
   it("renders the Gallery component", () => {
     render(<Gallery images={images} />);
 
-    images.forEach((image) => {
+    images.forEach(() => {
       expect(screen.getByAltText("Image")).toBeInTheDocument();
     });
 
