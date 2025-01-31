@@ -14,7 +14,7 @@ const config: Config = {
   testEnvironment: "jsdom",
 
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>/$1", // ✅ Correct path if `@/` maps to `src/`
+    "^@/(.*)$": "<rootDir>/$1",
   },
 
   moduleDirectories: ["node_modules", "<rootDir>/"],
