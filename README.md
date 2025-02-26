@@ -4,11 +4,11 @@
 
 ## 📷 Image preview
 
-Category page
-![Screenshot 2025-01-29 at 10 45 02](https://github.com/user-attachments/assets/8c40e884-8889-424d-903a-4125c21e610a)
+Home Page
+![Screenshot 2025-02-26 at 13 34 18](https://github.com/user-attachments/assets/a73a1653-4cbd-484b-8287-6ec246339c20)
 
 Cart
-![Screenshot 2025-01-29 at 10 45 37](https://github.com/user-attachments/assets/0f42d27c-c98e-44ad-b791-6be4f18e5989)
+<img width="1433" alt="Screenshot 2025-02-26 at 13 35 02" src="https://github.com/user-attachments/assets/018230df-c768-46e1-84f4-f825cb7d132b" />
 
 ## 🚀 Running Local
 
